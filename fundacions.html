@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<meta name="repository" content="https://github.com/<your-username>/<repository-name>">
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundación Ser y Hacer(malargüe) - Aprendizaje Didáctico</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Estilos adicionales para los botones y el contenido a mostrar */
+    button {
+      margin-bottom: 10px;
+      transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+      color: #fff; /* Color del texto del botón */
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      /* Estilos de gradiente para cada botón */
+      background-image: linear-gradient(to right, #007bff, #0056b3); /* Gradiente azul */
+    }
+
+    button#programs-button {
+      background-image: linear-gradient(to right, #28a745, #218838); /* Gradiente verde */
+    }
+
+    button#reddes-button {
+      background-image: linear-gradient(to right, #ffc107, #e0a800); /* Gradiente amarillo */
+    }
+
+    button#collaboration-button {
+      background-image: linear-gradient(to right, #dc3545, #c82333); /* Gradiente rojo */
+    }
+
+    button:hover {
+      filter: brightness(1.2); /* Ajusta el brillo al pasar el cursor sobre el botón */
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <img src="fundacion.jpg" alt="Imagen de la Fundación Ser y Hacer">
+      <div class="header-text">
+        <h1>Fundación Ser y Hacer(malargüe)</h1>
+        <h2 class="subtitle">Inspirando Vidas con Propósito</h2>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <div class="section-container">
+        <h2>¿Quiénes somos?</h2>
+        <button onclick="toggleVisibility('about-info')">Mostrar información</button>
+        <p id="about-info" class="hidden">La Fundación Ser y Hacer es una organización sin fines de lucro cuyo objetivo es capacitar y acompañar a las personas en la exploración de su propósito y en el diseño de su proyecto de vida. Lo hacemos a través de programas y actividades que fomentan el desarrollo personal, promueven liderazgos basados en el servicio y contribuyen al crecimiento de dirigentes sociales y emprendedores.</p>
+      </div>
+    </section>
+
+    <section id="programs">
+      <div class="section-container">
+        <h2>¿Qué hacemos?</h2>
+        <button id="programs-button" onclick="toggleVisibility('programs-info')">Mostrar información</button>
+        <ul id="programs-info" class="hidden">
+          <li><strong>Constrúyete con Propósito y con Poder (16-18 años)</strong><p>Programa para jóvenes que les ayuda a descubrir su propósito en la vida y desarrollar las habilidades necesarias para alcanzarlo.</p></li>
+          <li><strong>Taller de Liderazgo para Dirigentes Sociales</strong><p>Taller que brinda a los líderes sociales las herramientas necesarias para ser más efectivos en su trabajo.</p></li>
+          <li><strong>Programa de Emprendimiento</strong><p>Programa que ayuda a los emprendedores a desarrollar y lanzar sus negocios.</p></li>
+        </ul>
+      </div>
+    </section>
+    
+    <section id="reddes">
+      <div class="section-container">
+        <h2>¿Cómo puedes encontrarnos en las redes?</h2>
+        <button id="reddes-button" onclick="toggleVisibility('reddes-info')">redes</button>
+        <ul id="reddes-info" class="hidden">
+          <li>Instagram: seryhacer.fundacion</li>
+          <!-- Agrega aquí más información sobre las redes sociales -->
+        </ul>
+      </div>
+    </section>
+    
+    <section id="collaboration">
+      <div class="section-container">
+        <h2>Nuestros encuentros</h2>
+        <button id="collaboration-button" onclick="toggleVisibility('collaboration-info')">Videos y fotos</button>
+        <ul id="collaboration-info" class="hidden">
+          <li><img src="encuentro1.jpg" alt="Imagen del encuentro 1"></li>
+          <li><img src="encuentro3.jpeg" alt="Imagen del encuentro 3" width="500" height="400"></li>
+<li><img src="encuentro4.jpeg" alt="Imagen del encuentro 4" width="300" height="400"></li>
+<li>
+  <p>dia 1</p>
+  <video width="500" height="400" controls poster="placeholder.jpg">
+    <source src="1.mp4" type="video/mp4">
+    <audio src="1-audio.mp3" type="audio/mpeg"></audio>
+    Your browser does not support the video tag.
+  </video>
+</li>
+<li>
+  <p>dia 2</p>
+  <video width="500" height="400" controls poster="placeholder.jpg">
+    <source src="2.mp4" type="video/mp4">
+    <audio src="2-audio.mp3" type="audio/mpeg"></audio>
+    Your browser does not support the video tag.
+  </video>
+</li>
+<li>
+  <p>dia 3</p>
+  <video width="500" height="400" controls poster="placeholder.jpg">
+    <source src="3.mp4" type="video/mp4">
+    <audio src="3.mp3" type="video/mp4"                                                                                              -audio.mp3" type="audio/mpeg"></audio>
+    Your browser does not support the video tag.
+  </video>
+</li>
+<li>
+  <p>dia 4</p>
+  <video width="500" height="400" controls poster="placeholder.jpg">
+    <source src="4.mp4" type="video/mp4">
+    <audio src="4-audio.mp3" type="audio/mpeg"></audio>
+    Your browser does not support the video tag.
+  </video>
+</li>
+<li>
+  <p>dia 5</p>
+  <video width="500" height="400" controls poster="placeholder.jpg">
+    <source src="5.mp4" type="video/mp4">
+    <audio src="5-audio.mp3" type="audio/mpeg"></audio>
+    Your browser does not support the video tag.
+  </video>
+</li>
+          <!-- Agrega aquí más contenido sobre los encuentros -->
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Fundación Ser y Hacer 2024</p>
+  </footer>
+
+  <script>
+    // Función para alternar la visibilidad del contenido
+    function toggleVisibility(id) {
+      const element = document.getElementById(id);
+      if (element.classList.contains('hidden')) {
+        element.classList.remove('hidden');
+      } else {
+        element.classList.add('hidden');
+      }
+    }
+  </script>
+</body>
+</html>
